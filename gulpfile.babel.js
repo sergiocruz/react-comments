@@ -31,7 +31,7 @@ function bundle() {
   gutil.log('Compiling JS...');
 
   return bundler.bundle()
-    .on('error', (err) => {
+    .on('error', function(err) {
       gutil.log(err.message);
       browserSync.notify('Browserify Error!');
       this.emit('end');

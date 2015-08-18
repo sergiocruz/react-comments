@@ -7,7 +7,7 @@
 body {
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 300;
   line-height: 1.5em;
   margin: 0;
@@ -20,7 +20,38 @@ body {
   padding: 0 30px;
 }
 
-.h1 {
-  font-size: 36px;
-  font-weight: 200;
+
+/////////////////////////////////////
+// HEADERS
+/////////////////////////////////////
+
+$header-margin: 1em;
+$header-size: 2em;
+$header-weight: 300;
+
+@mixin headers($headerFactor) {
+  font-size: ($header-size - (.26em * $headerFactor));
+  font-weight: $header-weight;
+  margin: ($header-margin - (.2em * $headerFactor)) 0;
 }
+
+.h1 {
+  @include headers(1);
+}
+
+.h2 {
+  @include headers(2);
+}
+
+.h3 {
+  @include headers(3);
+}
+
+.h4 {
+  @include headers(4);
+}
+
+.h5 {
+  @include headers(5);
+}
+

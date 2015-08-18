@@ -1,5 +1,46 @@
 .comments-app {
-  padding: 30px;
-  background: #EFEFEF;
-  border: 1px solid #ccc;
+  background: #FAFAFA;
+  border: 1px solid #EEE;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+.comment {
+  margin: 1em 0;
+}
+
+%inline-action {
+  display: inline-block;
+  margin-right: .8em;
+}
+
+.comment-header {
+  font-size: .75em;
+
+  .comment-author {
+    @extend %inline-action;
+    font-weight: 600;
+  }
+
+  .comment-date {
+    @extend %inline-action;
+  }
+
+}
+
+.comment-footer {
+  font-size: .75em;
+
+  .comment-upvote {
+    @extend %inline-action;
+  }
+
+  .comment-downvote {
+    @extend %inline-action;
+  }
+  
+  .comment-delete {
+    @extend %inline-action;
+  }
+
 }
