@@ -17,12 +17,12 @@
 .comment-header {
   font-size: .75em;
 
-  .comment-author {
+  .comment-header-author {
     @extend %inline-action;
     font-weight: 600;
   }
 
-  .comment-date {
+  .comment-header-date {
     @extend %inline-action;
   }
 
@@ -31,15 +31,15 @@
 .comment-footer {
   font-size: .75em;
 
-  .comment-upvote {
+  .comment-footer-upvote {
     @extend %inline-action;
   }
 
-  .comment-downvote {
+  .comment-footer-downvote {
     @extend %inline-action;
   }
-  
-  .comment-delete {
+
+  .comment-footer-delete {
     @extend %inline-action;
   }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './components/app';
+import App from './level-5/components/app';
 
 React.render(
   <App />,
