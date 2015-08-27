@@ -20,7 +20,7 @@ export default class Level0App extends React.Component {
   render() {
     return (
       <div className="comments-app">
- 
+
         <h4 className="h4">2 comments</h4>
 
         <section className="comment">
@@ -46,7 +46,7 @@ export default class Level0App extends React.Component {
           <footer className="comment-footer">
             <a href="#" className="comment-footer-upvote">0 upvotes</a>
             <a href="#" className="comment-footer-downvote">0 downvotes</a>
-            <a href="#" className="comment-footer-delete">Delte</a>
+            <a href="#" className="comment-footer-delete">Delete</a>
           </footer>
         </section>
 
