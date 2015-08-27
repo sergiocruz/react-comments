@@ -1,20 +1,20 @@
-// import React from 'react';
-let React = require('react')
-
 /**
- * Level 0 App:
- *
- * In this phase of our app, we're returning the equivalent of
- * static html. Although this syntax looks a lot like html, it's
- * actually called JSX.
- *
- * JSX gets transpiled to JavaScript. Even though we write
- * "html looking code", the resulting code looks something
- * like this:
- *
- * return React.createElement("div", { className: "comments-app" }, ...);
- *
+  Level 0 App:
+
+  In this phase of our app, we're returning the equivalent of
+  static html. Although this syntax looks a lot like html, it's
+  actually called JSX.
+
+  JSX gets transpiled to JavaScript. Even though we write
+  "html looking code", the resulting code looks something
+  like this:
+
+  return React.createElement("div", { className: "comments-app" }, ...);
+
  */
+
+import React from 'react';
+
 export default class Level0App extends React.Component {
 
   render() {
