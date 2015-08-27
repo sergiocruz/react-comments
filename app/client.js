@@ -6,7 +6,7 @@ import Levels from './levels';
 
 // TODO: allow `level` to be dynamic
 // Maybe send arguments from Gulp/Browserify?
-let level = 0;
+let level = 1;
 
 // Top-level `<App />`
 let App = Levels[level];
