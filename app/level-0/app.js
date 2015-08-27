@@ -28,7 +28,7 @@
 
 import React from 'react';
 
-export default class Level0App extends React.Component {
+export default class App extends React.Component {
 
   render() {
     return (

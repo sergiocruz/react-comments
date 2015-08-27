@@ -36,7 +36,7 @@
 import React from 'react';
 import Comments from './comments'
 
-export default class Level1App extends React.Component {
+export default class App extends React.Component {
 
   render() {
     return (
