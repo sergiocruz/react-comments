@@ -26,7 +26,7 @@ export default class Comment extends React.Component {
     if (this.state.confirmDelete) {
 
       deleteButton = (
-        <span className="comment-delete">
+        <span className="comment-footer-delete">
           <span>Are you sure? </span>
           <a href="" onClick={this._delete}>Yes</a>
           <span> - </span>
@@ -37,7 +37,7 @@ export default class Comment extends React.Component {
 
     } else {
       deleteButton = (
-        <a href="" className="comment-delete" onClick={this._confirmDelete}>
+        <a href="" className="comment-footer-delete" onClick={this._confirmDelete}>
           Delete
         </a>
       );
@@ -48,19 +48,19 @@ export default class Comment extends React.Component {
       <section className="comment">
 
         <header className="comment-header">
-          <span className="comment-author">{this.props.comment.author}</span>
-          <span className="comment-date">{this.props.comment.date}</span>
+          <span className="comment-header-author">{this.props.comment.author}</span>
+          <span className="comment-header-date">{this.props.comment.date}</span>
         </header>
 
-        <div className="comment-body">{this.props.comment.body}</div>
+        <p className="comment-body">{this.props.comment.body}</p>
 
         <footer className="comment-footer">
 
-          <a href="" className="comment-upvote" onClick={this._upvote}>
+          <a href="" className="comment-footer-upvote" onClick={this._upvote}>
             {this.props.comment.upvotes} upvotes
           </a>
 
-          <a href="" className="comment-downvote" onClick={this._downvote}>
+          <a href="" className="comment-footer-downvote" onClick={this._downvote}>
             {this.props.comment.downvotes} downvotes
           </a>
 
